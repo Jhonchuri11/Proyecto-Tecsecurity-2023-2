@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "181464164712",
+    "project_id": "tsecurity-7a13c",
+    "storage_bucket": "tsecurity-7a13c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:181464164712:android:b54297bac0817287aa4edd",
+        "android_client_info": {
+          "package_name": "com.jhon.churivanti.tsecurity"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAer6P8-vFNxCGFpFJ3CKpGg-1LW5LQ6VI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
