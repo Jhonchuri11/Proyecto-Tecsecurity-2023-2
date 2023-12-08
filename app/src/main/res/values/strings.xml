@@ -11,11 +11,12 @@
     <string name="btn_register">REGISTRARSE</string>
     <string name="btn_login">INICIAR SESIÓN</string>
     <string name="login_title">INICIAR SESIÓN</string>
+    <string name="Intro">Siempre con Tec-Security!</string>
     <string name="login_sub_title">
         <font color="#00C9B8"><b>Inicia Sesión</b></font>
         si ya posees una cuenta.
     </string>
-    <string name="login_email">Tu email o nombre de usuario</string>
+    <string name="login_hint_email_user">Tu email o nombre de usuario</string>
     <string name="login_password">Tu contraseña</string>
     <string name="login_forgot_pw">¿Olvidaste tu contraseña?</string>
     <string name="login_havent_account">
@@ -81,5 +82,22 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+
+    <string name="reset_pw_title">RESTAURA TU CONTRASEÑA</string>
+    <string name="reset_pw_sub_title">
+        <font color="#00C9B8">Restaura tu contraseña</font>
+        si la olvidaste.
+    </string>
+
+    <string name="btn_reset_pw">RESTAURAR CONTRASEÑA</string>
+
+    <string name="back_to_login">
+        Volver a
+        <font color="#00C9B8"><b>Inicio de sesión</b></font>
+    </string>
+
+    <string name="login_subtitle"><![CDATA[Empoyering tech amazing individuals to shine trough hackathons, talks & challenges]]></string>
+
+    <string name="verification_check_mail">Para acceder a la aplicación verifica tu correo electrónico (recuerda mirar en SPAM).</string>
 
 </resources>

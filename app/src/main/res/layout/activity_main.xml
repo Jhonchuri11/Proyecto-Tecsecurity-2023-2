@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.MainActivity"
-    android:background="@color/primary_color"
+    android:background="@drawable/gradient_color_background"
     android:padding="20dp">
 
     <TextView
@@ -15,6 +15,7 @@
         android:layout_marginTop="30dp"
         android:fontFamily="@font/montserrat"
         android:text="@string/started_title"
+        android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="36sp"
         android:textStyle="bold"
@@ -50,7 +51,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="15dp"
         android:text="@string/btn_login"
-        style="@style/ButtonWhite"
+        android:textColor="@color/white"
+        android:background="@drawable/intro_button_background"
         app:layout_constraintBottom_toTopOf="@+id/btn_register"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -61,7 +63,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
         android:text="@string/btn_register"
-        style="@style/ButtonWhite"
+        android:textColor="@color/white"
+        android:background="@drawable/intro_button_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

@@ -3,12 +3,18 @@ package com.jhon.churivanti.tsecurity.ui.viewmodel
 import android.content.Context
 import android.util.Log
 import android.util.Patterns
+import android.widget.Toast
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.google.firebase.FirebaseApp
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import com.jhon.churivanti.tsecurity.data.network.RetrofitClient
+import com.jhon.churivanti.tsecurity.data.network.UserResponse
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 import java.util.regex.Pattern
 
 class RegisterViewModel(private val context: Context) : ViewModel() {
@@ -22,6 +28,7 @@ class RegisterViewModel(private val context: Context) : ViewModel() {
     val passwordDebil = MutableLiveData<Boolean>()
     val emailInvalido = MutableLiveData<Boolean>()
     val registerFailds = MutableLiveData<Boolean>()
+    val retrofiResponsess = MutableLiveData<Boolean>()
 
 
     // Inicializando firebase para autenticacion
@@ -31,16 +38,16 @@ class RegisterViewModel(private val context: Context) : ViewModel() {
     }
 
     // Funcion que valida los campos del formulario
-    fun validateData(email: String, password: String, password2: String) {
+    fun validateData(name: String, email: String, username: String, password: String, password2: String) {
 
-        if(email.isEmpty() || password.isEmpty() || password2.isEmpty()) {
+        if( name.isEmpty() || email.isEmpty() || username.isEmpty() || password.isEmpty() || password2.isEmpty()) {
             // Los campos son nulos
             emptyFieldsError.postValue(true)
             return
         }
 
         val passwordRegex = Pattern.compile("^" +
-                "(?=.*[‐@#$%^&+=])" +     // Tiene que tener 1 carácter especial
+                "(?=.*[‐@#$%^&+])" +     // Tiene que tener 1 carácter especial
                 ".{6,}") // Logintud de contraseña
 
         if (email.isEmpty() || !Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
@@ -58,20 +65,24 @@ class RegisterViewModel(private val context: Context) : ViewModel() {
 
             fieldsPasswordIquals.postValue(true)
 
-            // Procede a crear una cuenta si se cumplen las anteriores
+            // Procede a crear una cuenta si se cumplen las anteriores condiciones
         } else {
-            createAccount(email, password)
+            createAccount(name, email, username, password)
         }
 
     }
 
-    // Funcion para crear cuenta del user
-    private fun createAccount(email: String, password: String) {
+    // Funcion para crear cuenta del user con firebase
+    private fun createAccount(name: String, email: String, username: String, password: String) {
 
         auth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener { task ->
                 if (task.isSuccessful) {
                     // Registro exitosos
+                    val firebaseUser = auth.currentUser
+
+                    ApiRegister(name, email, username, password)
+
                     goSuccessRegister.postValue(true)
                 } else {
                     Log.w("TAG", "createUserWithEmail:failure", task.exception)
@@ -79,6 +90,22 @@ class RegisterViewModel(private val context: Context) : ViewModel() {
                     registerFailds.postValue(true)
                 }
             }
+    }
+
+    private fun ApiRegister(name: String, email: String, username: String, password: String) {
+        RetrofitClient.instance.createUser(name, email, username, password)
+            .enqueue(object : Callback<UserResponse>{
+                override fun onResponse(
+                    call: Call<UserResponse>,
+                    response: Response<UserResponse>
+                ) {
+                    Log.e("JWCA", "Buena Django: ${response.message()}")
+                }
+
+                override fun onFailure(call: Call<UserResponse>, t: Throwable) {
+                    Log.e("JWCA", "Error en la llamada a la API de Django: ${t.message}")
+                }
+            })
     }
 }
 

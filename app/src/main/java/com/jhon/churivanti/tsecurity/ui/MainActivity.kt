@@ -15,6 +15,8 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
             startLogin()
         }
 
+
+
         // Login
         binding.btnRegister.setOnClickListener {
             startRegister()

@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Permisos para la localización en tiempo real -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -15,7 +17,33 @@
         android:theme="@style/Theme.Tsecurity"
         tools:targetApi="31">
         <activity
-            android:name=".ui.VerificationActivity"
+            android:name=".ui.view.MapFragment"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.RecuperarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.IntroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.VisitFragment"
+            android:exported="false" />
+        <activity
+            android:name=".ui.InitActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Prueba"
+            android:exported="false" /> <!-- Que llama al api key valida y llamamos el valor alojado en google_maps_key -->
+        <!-- API KEY de Google Maps este es importante para el uso de mapas Generado en google -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".ui.verification.VerificationActivity"
             android:exported="false" />
         <activity
             android:name=".ui.HomeActivity"
@@ -30,7 +58,11 @@
             android:exported="false" />
         <activity
             android:name=".ui.MainActivity"
-            android:exported="true">
+            android:exported="false" />
+        <activity
+            android:name=".ui.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Splashteme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

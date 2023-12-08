@@ -45,8 +45,8 @@
     </style>
 
     <style name="TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
-        <item name="android:textColorHint">@color/grey</item>
-        <item name="hintTextColor">@color/grey</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="hintTextColor">@color/white</item>
         <item name="startIconTint">@color/primary_color</item>
         <item name="boxStrokeWidth">0dp</item>
         <item name="boxStrokeWidthFocused">0dp</item>
@@ -56,6 +56,23 @@
         <item name="android:background">@drawable/bg_text_field</item>
         <item name="android:fontFamily">@font/montserrat</item>
     </style>
+    <string name="login_email">Tu email o nombre de usuario</string>
+    <style name="roundImageRound">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
 
     <style name="Theme.Tsecurity" parent="Base.Theme.Tsecurity" />
+
+    <style name="CaptionText" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/primary_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+    </style>
 </resources>

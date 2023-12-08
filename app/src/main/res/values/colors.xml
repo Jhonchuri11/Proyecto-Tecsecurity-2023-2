@@ -9,5 +9,15 @@
     <color name="teal_700">#FF018786</color>
     <color name="primary_color">#00C9B8</color>
     <color name="grey">#888888</color>
-    <color name="grey_light">#F0F0F0</color>
+    <color name="grey_light">#F8F6F6</color>
+    <color name="fonInput">#8109EDE6</color>
+    <color name="zanah">#D7EACE</color>
+    <color name="light_font">#FBFBFB</color>
+    <color name="lavender">#8692f7</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="pink">#e45eb0</color>
+    <color name="green">#343</color>
+    <color name="main_backgroud">#19191b</color>
+
 </resources>

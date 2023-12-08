@@ -3,6 +3,7 @@ package com.jhon.churivanti.tsecurity.ui
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
+import com.google.firebase.auth.FirebaseAuth
 import com.jhon.churivanti.tsecurity.databinding.ActivityLoginBinding
 import com.jhon.churivanti.tsecurity.ui.viewmodel.LoginViewModel
 
@@ -13,12 +14,31 @@ class LoginActivity : BaseActivity<ActivityLoginBinding>(ActivityLoginBinding::i
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        // Si el user opta por recuperar contraseña
+
+        binding.tvForgotPassword.setOnClickListener {
+            val intent = Intent(this, RecuperarActivity::class.java)
+            startActivity(intent)
+
+        }
+        // Si el usuario optar por crear su cuenta
+        binding.tvHaventAccount.setOnClickListener {
+            val intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
+        }
+
+        if (FirebaseAuth.getInstance().currentUser == null) {
+            observeViewModel()
+        } else {
+            val intent = Intent(this, InitActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
         // Boton de iniciar sesion
         binding.btnLogin.setOnClickListener {
             startLoginUser()
         }
 
-        observeViewModel()
     }
 
     // Funcion que recoge las condiciones y verifica si hay un fallo para mostrar lo definido
@@ -38,8 +58,10 @@ class LoginActivity : BaseActivity<ActivityLoginBinding>(ActivityLoginBinding::i
 
         // Si las credenciales cumplen se procede a enviar al user al activity home
         loginViewModel.gootSuccessLogin.observe(this) {
-            val intent = Intent(this, HomeActivity::class.java)
+            val intent = Intent(this, InitActivity::class.java)
             startActivity(intent)
+            Toast.makeText(this, "Autenticación exitosa", Toast.LENGTH_SHORT).show()
+            finish()
         }
 
         // Si ocurre un error o los datos son incorrectos
