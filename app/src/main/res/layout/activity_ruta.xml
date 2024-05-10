@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.RutaActivity">
+
+    <!-- Barra de navegación -->
+    <RelativeLayout
+        android:id="@+id/actionBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/main_backgroud">
+
+        <ImageButton
+            android:id="@+id/iconoVolver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_volver_atras"
+            android:contentDescription="Volver"/>
+
+        <!-- Ajusta este recurso según el icono que desees -->
+
+        <TextView
+            android:id="@+id/tituloRuta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Calculando ruta automóvil"
+            android:textColor="#FFF"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <!-- Contenedor del mapa -->
+    <FrameLayout
+        android:id="@+id/mapContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/actionBarLayout"
+        android:layout_weight="1">
+
+        <fragment
+            android:id="@+id/fragmentMapRuta"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </FrameLayout>
+
+    <!-- Cuadro de botones en la parte inferior -->
+    <LinearLayout
+        android:id="@+id/buttonsLayout"
+        android:orientation="vertical"
+        android:background="@color/main_backgroud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Textos a la izquierda y derecha -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <!-- Texto a la izquierda -->
+            <TextView
+                android:id="@+id/tvLeft"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:text="La ruta que usted puede seguir"
+                android:padding="16dp"/>
+
+            <!-- Texto a la derecha -->
+            <TextView
+                android:id="@+id/tvRight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:text="Tiene su ubicación actual como el destino"
+                android:padding="16dp"/>
+        </LinearLayout>
+
+        <!-- Botones para "Salir más tarde" e "Ir ahora" -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="30dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_cancelar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/intro_button_background"
+                android:text="Volver a inicio"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

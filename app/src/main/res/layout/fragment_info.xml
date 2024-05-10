@@ -7,17 +7,5 @@
     android:background="@drawable/gradient_color_background"
     tools:context=".ui.view.Infofragment">
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tus Info"
-        android:textSize="20sp"
-        android:layout_marginTop="16dp"
-        android:textStyle="bold"
-        android:textColor="@color/primary_color"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

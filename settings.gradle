@@ -1,6 +1,7 @@
 pluginManagement {
     repositories {
         google()
+        // Para el uso de login facebook
         mavenCentral()
         gradlePluginPortal()
         jcenter()

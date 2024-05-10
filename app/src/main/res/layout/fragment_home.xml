@@ -13,18 +13,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tus Mapa"
-        android:textSize="20sp"
-        android:layout_marginTop="16dp"
-        android:textStyle="bold"
-        android:textColor="@color/primary_color"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
@@ -37,8 +25,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:rippleColor="#22ED7563"
-        app:srcCompat="@drawable/ic_baseline_add_24"
-        app:tint="@color/lavender"
+        app:srcCompat="@android:drawable/ic_input_add"
+        app:tint="@color/bg_boton"
         tools:visibility="visible"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

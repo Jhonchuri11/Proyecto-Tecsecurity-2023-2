@@ -7,16 +7,13 @@ import android.os.Looper
 import android.view.View
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
-import com.jhon.churivanti.tsecurity.data.network.RouteResponse
-import com.jhon.churivanti.tsecurity.data.network.UserResponse
+import com.jhon.churivanti.tsecurity.data.network.RegisterUserResponse
 import com.jhon.churivanti.tsecurity.databinding.ActivityRegisterBinding
 import com.jhon.churivanti.tsecurity.ui.viewmodel.RegisterViewModel
 
 class RegisterActivity : BaseActivity<ActivityRegisterBinding>(ActivityRegisterBinding::inflate) {
 
     private lateinit var registerViewModel: RegisterViewModel
-
-    private lateinit var userResponse: UserResponse
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -100,7 +97,7 @@ class RegisterActivity : BaseActivity<ActivityRegisterBinding>(ActivityRegisterB
         registerViewModel.registerFailds.observe(this) {
             Toast.makeText(
                 baseContext,
-                "Hubo un error al registrarse",
+                "Hubo un error al registrarse, vuelva a intentar!",
                 Toast.LENGTH_SHORT,
             ).show()
         }

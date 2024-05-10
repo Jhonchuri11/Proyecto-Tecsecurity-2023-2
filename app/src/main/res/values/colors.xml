@@ -13,8 +13,13 @@
     <color name="fonInput">#8109EDE6</color>
     <color name="zanah">#D7EACE</color>
     <color name="light_font">#FBFBFB</color>
+    <color name="paper">#2E353F</color>
     <color name="lavender">#8692f7</color>
+    <color name="bg_boton">#373EBF</color>
     <color name="transparent">#00000000</color>
+    <color name="logo1">#293C9C</color>
+    <color name="logo2">#299C9C</color>
+    <color name="logo3">#A5554F</color>
 
     <color name="pink">#e45eb0</color>
     <color name="green">#343</color>

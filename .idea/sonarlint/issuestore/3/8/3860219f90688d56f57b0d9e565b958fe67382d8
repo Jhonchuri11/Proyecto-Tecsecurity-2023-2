@@ -1,0 +1,24 @@
+
+Qkotlin:S1172|"2Use "_" instead of these unused lambda parameters.(Áùó8ÖâşíÇ1
+Rkotlin:S1172‡"2Use "_" instead of these unused lambda parameters.(êÓ¶Ş8ÖâşíÇ1
+;kotlin:S6310E"Avoid hardcoded dispatchers.(á¥ €8ÚâşíÇ1
+;kotlin:S6310]"Avoid hardcoded dispatchers.(á¥ €8×ËˆîÇ1
+;kotlin:S6310H"Avoid hardcoded dispatchers.(Í¡·Ş8ÚâşíÇ1
+;kotlin:S6310`"Avoid hardcoded dispatchers.(Í¡·Ş8ÚâşíÇ1
+;kotlin:S6310j"Avoid hardcoded dispatchers.(Í¡·Ş8×ËˆîÇ1
+skotlin:S6306E"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(á¥ €8İâşíÇ1
+skotlin:S6306]"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(á¥ €8ÛËˆîÇ1
+Qkotlin:S1481œ",Remove this unused "message" local variable.(‘£Èóÿÿÿÿÿ8ßâşíÇ1
+9kotlin:S1128"Remove this unused import.(ıºÎà8àâşíÇ1
+8kotlin:S1128"Remove this unused import.(Ş‚½8àâşíÇ1
+8kotlin:S1128"Remove this unused import.(îâœu8áâşíÇ1
+>kotlin:S1128"Remove this unused import.(ÚÚÙÁúÿÿÿÿ8áâşíÇ1
+8kotlin:S1128	"Remove this unused import.(‰¿Ë8áâşíÇ1
+>kotlin:S1128"Remove this unused import.(ü‘»¡ıÿÿÿÿ8¹Ş…îÇ1
+9kotlin:S1128"Remove this unused import.(åå8¹Ş…îÇ1
+9kotlin:S1128"Remove this unused import.(´®Ù8áâşíÇ1
+9kotlin:S1128"Remove this unused import.(±Ğ½ø8áâşíÇ1
+9kotlin:S1128"Remove this unused import.(‚ê×Í8áâşíÇ1
+9kotlin:S1128"Remove this unused import.(İ˜Æ‚8áâşíÇ1
+>kotlin:S1128"Remove this unused import.(ò“ì­üÿÿÿÿ8áâşíÇ1
+9kotlin:S1128"Remove this unused import.(¼„¹8áâşíÇ1

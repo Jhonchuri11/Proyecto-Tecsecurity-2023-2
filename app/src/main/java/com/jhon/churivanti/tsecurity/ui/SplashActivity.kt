@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
 import io.reactivex.Completable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import java.util.concurrent.TimeUnit
@@ -15,16 +16,22 @@ class SplashActivity : AppCompatActivity() {
 
         Completable.timer(3, TimeUnit.SECONDS, AndroidSchedulers.mainThread())
             .subscribe({
-                Toast.makeText(this, "Presentando...", Toast.LENGTH_SHORT).show()
-                mainActi()
+                checkFirebaseAuthentication()
             })
     }
+    private fun checkFirebaseAuthentication() {
+        val auth = FirebaseAuth.getInstance()
+        val currentUser = auth.currentUser
 
-    private fun mainActi() {
-        val intent = Intent(this, IntroActivity::class.java)
-        //val intent = Intent(this, InitActivity::class.java)
-        startActivity(intent)
+        if (currentUser != null) {
+            startActivity(Intent(this, InitActivity::class.java))
+        } else {
+            Toast.makeText(this, "Presentando...", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, IntroActivity::class.java))
+        }
+
         finish()
     }
+
 
 }

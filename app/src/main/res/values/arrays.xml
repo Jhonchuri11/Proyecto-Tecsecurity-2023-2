@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tipos_incidente">
+        <item>Incendio</item>
+        <item>Fuga de gas</item>
+        <item>Accidente de tránsito</item>
+    </string-array>
+    <string-array name="nivelPeligro">
+        <item>Bajo</item>
+        <item>Moderado</item>
+        <item>Alto</item>
+    </string-array>
+</resources>

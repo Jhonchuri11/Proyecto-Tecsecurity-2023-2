@@ -14,6 +14,12 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <!-- Para la que las imagenes de perfil se puedan adaptar y tener un entorno redondo -->
+    <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
     <style name="ButtonWhite">
         <item name="android:background">@drawable/bg_button</item>
         <item name="android:fontFamily">@font/montserrat</item>
@@ -56,7 +62,7 @@
         <item name="android:background">@drawable/bg_text_field</item>
         <item name="android:fontFamily">@font/montserrat</item>
     </style>
-    <string name="login_email">Tu email o nombre de usuario</string>
+    <string name="login_email">Tu correo electrónico</string>
     <style name="roundImageRound">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">50%</item>

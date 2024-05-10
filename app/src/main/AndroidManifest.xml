@@ -4,7 +4,10 @@
 
     <uses-permission android:name="android.permission.INTERNET" /> <!-- Permisos para la localización en tiempo real -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- Permisos para el uso de cámara -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
 
     <application
         android:allowBackup="true"
@@ -15,10 +18,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Tsecurity"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".ui.view.MapFragment"
+            android:name=".ui.ActivityRutaCaminata"
             android:exported="false" />
+        <activity
+            android:name=".ui.FormComentario"
+            android:exported="false" />
+        <activity
+            android:name=".ui.FormularioRegistroIncidente"
+            android:exported="false" />
+        <activity
+            android:name=".ui.PerfilCreatePhoto"
+            android:exported="false" />
+        <activity
+            android:name=".ui.configurarCuenta"
+            android:exported="false" />
+        <activity
+            android:name=".ui.RutaActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"
+            tools:replace="android:value" />
+
         <activity
             android:name=".ui.MapActivity"
             android:exported="false" />
@@ -33,9 +58,6 @@
             android:exported="false" />
         <activity
             android:name=".ui.InitActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.Prueba"
             android:exported="false" /> <!-- Que llama al api key valida y llamamos el valor alojado en google_maps_key -->
         <!-- API KEY de Google Maps este es importante para el uso de mapas Generado en google -->
         <meta-data
@@ -67,6 +89,22 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
     </application>

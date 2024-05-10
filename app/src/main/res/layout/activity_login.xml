@@ -96,20 +96,84 @@
         android:text="@string/btn_login"
         android:textColor="@color/white"
         android:background="@drawable/intro_button_background"
-        app:layout_constraintBottom_toTopOf="@+id/tv_havent_account"
+        app:layout_constraintBottom_toTopOf="@+id/btn_login_Google"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/tv_havent_account"
+    <LinearLayout
+        android:id="@+id/btn_login_Google"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:textColor="@color/white"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/tv_havent_account">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardGoogle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="@color/paper"
+            app:cardCornerRadius="8dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_google" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Facebook"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="@color/paper"
+            app:cardCornerRadius="8dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_facebook" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Agrega más CardViews según sea necesario -->
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewDivider"
+        android:layout_width="match_parent"
+        android:layout_height="0.9dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_login_Google"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_havent_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        style="@style/SubTitle"
+        android:layout_marginBottom="40dp"
         android:text="@string/login_havent_account"
-        android:textAlignment="center"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

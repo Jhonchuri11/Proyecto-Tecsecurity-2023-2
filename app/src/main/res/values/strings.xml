@@ -10,6 +10,7 @@
     <string name="illustration_img">Illustration Image</string>
     <string name="btn_register">REGISTRARSE</string>
     <string name="btn_login">INICIAR SESIÓN</string>
+    <string name="btn_login_google">INICIAR SESIÓN CON GOOGLE</string>
     <string name="login_title">INICIAR SESIÓN</string>
     <string name="Intro">Siempre con Tec-Security!</string>
     <string name="login_sub_title">
@@ -28,9 +29,9 @@
         <font color="#00C9B8"><b>Ingresa</b></font>
         tus datos en los siguientes campos
     </string>
-    <string name="register_fullname">Tu nombre completo</string>
-    <string name="register_email">Tu correo</string>
-    <string name="register_username">Tu nombre de usuario</string>
+    <string name="register_fullname">Nombres y apellidos</string>
+    <string name="register_email">Tu correo electrónico</string>
+    <string name="register_username">Tu número de celular</string>
     <string name="register_confirm_password">Confirmar contraseña</string>
     <string name="register_have_account">
         ¿Ya tienes una cuenta creada?,
@@ -99,5 +100,15 @@
     <string name="login_subtitle"><![CDATA[Empoyering tech amazing individuals to shine trough hackathons, talks & challenges]]></string>
 
     <string name="verification_check_mail">Para acceder a la aplicación verifica tu correo electrónico (recuerda mirar en SPAM).</string>
+
+    <!-- IDENTIFICADORES DE CLIENTE Y APP FACEBOOK-->
+    <string name="facebook_app_id">1055098399022766</string>
+    <string name="fb_login_protocol_scheme">fb1055098399022766</string>
+
+    <string name="foto_de_perfil">Foto de perfil</string>
+    <string name="ponga_su_mejor_foto">Ponga su mejor foto</string>
+    <string name="su_foto_le_ayuda_para_qu_sus_contactos_pueda_identificarle_m_s_r_pido">Su foto le ayuda para qué sus contactos pueda identificarle más rápido</string>
+    <string name="seleccionar_tipo">Seleccionar el tipo de incidente</string>
+    <string name="seleccionarNivelPeligro">Seleccionar el nivel de peligro</string>
 
 </resources>

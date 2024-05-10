@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.FormComentario"
+    android:background="@drawable/gradient_color_background"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:id="@+id/actionBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/main_backgroud">
+
+        <ImageView
+            android:id="@+id/iconoVolver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/baseline_navigate_before_24"
+            android:contentDescription="Volver"/>
+
+        <!-- Ajusta este recurso según el icono que desees -->
+
+        <TextView
+            android:id="@+id/tituloRuta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Registro de comentario"
+            android:textColor="#FFF"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_register_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:text="Crea tu comentario"
+        style="@style/Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_register_sub_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Detalles de la aplicación u otros temas en común"
+        style="@style/SubTitle"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_register_title" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/tv_register_sub_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tv_have_account">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_feedback_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Tu comentario"
+            style="@style/TextInputLayout"
+            app:startIconDrawable="@drawable/ic_google">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextcomentario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextInputEditText"
+                android:inputType="textMultiLine"
+                android:lines="5"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/intro_button_background"
+            android:text="registrar comentario"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/imageViewCentered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/illustration_started"
+        android:contentDescription="Centered Image"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

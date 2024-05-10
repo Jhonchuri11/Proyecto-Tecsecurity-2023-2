@@ -85,6 +85,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_username"
+            android:inputType="number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/TextInputEditText"/>
@@ -134,12 +135,15 @@
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animationView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:lottie_rawRes="@raw/animation"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/til_confirm_password"
         app:lottie_autoPlay="true"
-        android:visibility="invisible"/>
+        app:lottie_rawRes="@raw/animation" />
+
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_register"
@@ -165,5 +169,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

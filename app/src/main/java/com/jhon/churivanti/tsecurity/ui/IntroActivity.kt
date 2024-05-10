@@ -3,6 +3,7 @@ package com.jhon.churivanti.tsecurity.ui
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.google.firebase.auth.FirebaseAuth
 import com.jhon.churivanti.tsecurity.R
 import com.jhon.churivanti.tsecurity.databinding.ActivityIntroBinding
 

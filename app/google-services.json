@@ -12,7 +12,20 @@
           "package_name": "com.jhon.churivanti.tsecurity"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "181464164712-p4coiue7abdhvvhmo69kguff3tfg7ic4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jhon.churivanti.tsecurity",
+            "certificate_hash": "02bcb3eaa0406efa5718727db3c31171080816cd"
+          }
+        },
+        {
+          "client_id": "181464164712-68oa1qscrq49kv3s9kcbilnuqdfnsub7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyAer6P8-vFNxCGFpFJ3CKpGg-1LW5LQ6VI"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "181464164712-68oa1qscrq49kv3s9kcbilnuqdfnsub7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

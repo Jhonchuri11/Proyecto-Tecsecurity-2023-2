@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Fondo blanco -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/white" />
+        </shape>
+    </item>
+
+    <!-- Logo en el centro -->
+    <item android:gravity="center">
+        <bitmap
+            android:src="@drawable/illustration_started"
+            android:gravity="center"
+            />
+    </item>
+
+</layer-list>

@@ -7,7 +7,7 @@
         android:title="Perfil" />
     <item
         android:id="@+id/navigation_visit"
-        android:icon="@drawable/ic_lock"
+        android:icon="@drawable/ic_cambiar_nombre_usuario"
         android:title="Visitas" />
 
     <item

@@ -1,43 +1,12 @@
 
-9kotlin:S1128"Remove this unused import.(İ£—ë8ÃÔù¾Ä1
-9kotlin:S1128"Remove this unused import.(ıºÎà8ÃÔù¾Ä1
->kotlin:S1128"Remove this unused import.(¼„÷ãûÿÿÿÿ8ÃÔù¾Ä1
-8kotlin:S1128"Remove this unused import.(îâœu8ÃÔù¾Ä1
->kotlin:S1128"Remove this unused import.(ÚÚÙÁúÿÿÿÿ8ÃÔù¾Ä1
->kotlin:S1128"Remove this unused import.(­¡©úÿÿÿÿ8ÃÔù¾Ä1
-9kotlin:S1128	"Remove this unused import.(åå8ÃÔù¾Ä1
->kotlin:S1128
-"Remove this unused import.(ÊÒÅ­ùÿÿÿÿ8ÃÔù¾Ä1
-9kotlin:S1128"Remove this unused import.(´®Ù8ÃÔù¾Ä1
-9kotlin:S1128"Remove this unused import.(‚ê×Í8ÃÔù¾Ä1
-9kotlin:S1128"Remove this unused import.(İ˜Æ‚8ÃÔù¾Ä1
->kotlin:S1128"Remove this unused import.(ò“ì­üÿÿÿÿ8ÃÔù¾Ä1
-9kotlin:S1128"Remove this unused import.(¼„¹8ÃÔù¾Ä1
-9kotlin:S1128"Remove this unused import.(´Ùí8ê÷óÂ1
->kotlin:S1128"Remove this unused import.(¯”şÿÿÿÿ8ÃÔù¾Ä1
-8kotlin:S1128"Remove this unused import.(±ÿu8ÃÔù¾Ä1
->kotlin:S1128"Remove this unused import.(Îèôşÿÿÿÿ8ÃÔù¾Ä1
->kotlin:S1128"Remove this unused import.(¹ÃüÍÿÿÿÿÿ8ÃÔù¾Ä1
-9kotlin:S1128"Remove this unused import.(—‰¥ş8ÃÔù¾Ä1
-9kotlin:S1128"Remove this unused import.(¬£íÇ8ÃÔù¾Ä1
->kotlin:S1128"Remove this unused import.(¶–ïÈûÿÿÿÿ8ÃÔù¾Ä1
->kotlin:S1128"Remove this unused import.(ùî‚øÿÿÿÿ8ÃÔù¾Ä1
-8kotlin:S1128"Remove this unused import.(ã¢ã^8ÃÔù¾Ä1
->kotlin:S1128"Remove this unused import.(©®ƒÎüÿÿÿÿ8°Áú¾Ä1
-9kotlin:S1128"Remove this unused import.(¾åï8ÃÔù¾Ä1
-9kotlin:S1128"Remove this unused import.(—ßÖ¤8ÃÔù¾Ä1
->kotlin:S1128"Remove this unused import.(¶Áü¨üÿÿÿÿ8ÃÔù¾Ä1
->kotlin:S1128"Remove this unused import.(İÕÖøÿÿÿÿ8ÃÔù¾Ä1
->kotlin:S1128 "Remove this unused import.(šäªÿÿÿÿÿ8ÃÔù¾Ä1
-9kotlin:S1128$"Remove this unused import.(ş›çì8ÃÔù¾Ä1
->kotlin:S1128%"Remove this unused import.(»†­Éúÿÿÿÿ8ÃÔù¾Ä1
-9kotlin:S1128&"Remove this unused import.(çëıÁ8ÃÔù¾Ä1
-8kotlin:S1128'"Remove this unused import.(íäØ>8ÃÔù¾Ä1
->kotlin:S1128("Remove this unused import.(ØÇ‰Šûÿÿÿÿ8ÃÔù¾Ä1
->kotlin:S1128)"Remove this unused import.(—ï¢¹ÿÿÿÿÿ8ÃÔù¾Ä1
->kotlin:S1128*"Remove this unused import.(Ôê³¨ÿÿÿÿÿ8ÃÔù¾Ä1
->kotlin:S1128+"Remove this unused import.(èãÊõûÿÿÿÿ8ÃÔù¾Ä1
->kotlin:S1128,"Remove this unused import.(£ñ¹¸ûÿÿÿÿ8ÃÔù¾Ä1
->kotlin:S1128-"Remove this unused import.(Øç¯ïúÿÿÿÿ8ÃÔù¾Ä1
->kotlin:S1128."Remove this unused import.(ÂéŠùûÿÿÿÿ8ÃÔù¾Ä1
-9kotlin:S1128/"Remove this unused import.(¼‹¤ò8ÃÔù¾Ä1
+Ckotlin:S125ñ"Remove this commented out code.(—ÿŸûÿÿÿÿ8âÎÌéÇ1
+Ckotlin:S125¯"Remove this commented out code.(àŒÁ©ÿÿÿÿÿ8åÎÌéÇ1
+<kotlin:S6310ê"Avoid hardcoded dispatchers.(âßî™8ëÎÌéÇ1
+<kotlin:S6310š"Avoid hardcoded dispatchers.(âßî™8ëÎÌéÇ1
+Wkotlin:S1135³"2Complete the task associated to this TODO comment.(”îãÑıÿÿÿÿ8şÎÌéÇ1
+Kkotlin:S1481´"+Remove this unused "marker" local variable.(ÿì—†8ÏÌéÇ1
+Akotlin:S11287"Remove this redundant import.(í„Ø¡şÿÿÿÿ8†ÏÌéÇ1
+>kotlin:S1128"Remove this unused import.(„¦š¶úÿÿÿÿ8†ÏÌéÇ1
+>kotlin:S1128"Remove this unused import.(á»¸•úÿÿÿÿ8†ÏÌéÇ1
+9kotlin:S1128"Remove this unused import.(´Ùí8‡ÏÌéÇ1
+qkotlin:S3776—"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(üµ“8‹ÏÌéÇ1
