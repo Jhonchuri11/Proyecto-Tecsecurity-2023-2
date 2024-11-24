@@ -13,7 +13,7 @@ El proyecto fue desarrollando para mostrar rutas en las calles, implementada con
 - Firebase (Tanto para login y register de usuaurios)
 - Diseños y estilos creados para la reutilización por todo el proyecto
 
-## Pantalla de introducció, login y register
+## Pantalla de introducción, login y register
 La primera pantalla nos servirá de navegador hacia el login o el registro, luego iniciamos sesión o bien registrarse como usuario.
 
 <p align="center">
