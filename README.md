@@ -17,7 +17,7 @@ El proyecto fue desarrollando para mostrar rutas en las calles, implementada con
 La primera pantalla nos servirá de navegador hacia el login o el registro.
 
 <p align="center">
-<img align="center" width="300" alt="portfolio_view" src="https://github.com/Jhonchuri11/GestorDocumental_Frontend_Busqueda/blob/master/Requerimientos/Index.jpg">
+<img align="center"  width="200" alt="portfolio_view" src="https://github.com/Jhonchuri11/GestorDocumental_Frontend_Busqueda/blob/master/Requerimientos/Index.jpg">
 </p>
 
 ## Pantalla de login
