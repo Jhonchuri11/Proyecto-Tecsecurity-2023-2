@@ -35,9 +35,8 @@ El control de errores se ejecuta de dos formas distintas. En tiempo real, cada v
 Además la propia UI se actualiza reactivamente a través de su propio *StateFlow*.
 
 <p align="center">
-<img align="center" width="300" alt="portfolio_view" src="./docs/login_animation.gif">
-<img align="center" width="300" alt="portfolio_view" src="./docs/login_validation.gif">
-<img align="center" width="300" alt="portfolio_view" src="./docs/login_error.gif">
+<img align="center" width="300" alt="portfolio_view" src="https://github.com/Jhonchuri11/GestorDocumental_Frontend_Busqueda/blob/master/Requerimientos/Tecsecurity-login.gif">
+<img align="center" width="300" alt="portfolio_view" src="https://github.com/Jhonchuri11/GestorDocumental_Frontend_Busqueda/blob/master/Requerimientos/Tecsecurity-routes.gif">
 </p>
 
 ## Pantalla de registro
