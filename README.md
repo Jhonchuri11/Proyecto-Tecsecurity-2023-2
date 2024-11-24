@@ -35,17 +35,5 @@ Además la propia UI se actualiza reactivamente a través de su propio *StateFlo
 <img align="center" width="300" alt="portfolio_view" src="https://github.com/Jhonchuri11/GestorDocumental_Frontend_Busqueda/blob/master/Requerimientos/Tecsecurity-routes.gif">
 </p>
 
-## Pantalla de registro
-
-En esta pantalla tendremos que rellenar un formulario con validaciones similares a la pantalla del login. Si todo es correcto nos registrará y además creará en una tabla de la base de datos de *Firebase* un documento para dicho usuario donde almacenará el *nickName*, nombre completo y email.
-
-También dispone de un *scroll* ya que al ser tan larga puede acortarse en dispositivos pequeños.
-
-<p align="center">
-<img align="center" width="300" alt="portfolio_view" src="./docs/signin.png">
-</p>
-
-|                               Pantalla principal                               |                                   Resultado                                    |
-|:------------------------------------------------------------------------------:|:------------------------------------------------------------------------------:|
-|  <img src="https://github.com/Jhonchuri11/GestorDocumental_Frontend_Busqueda/blob/master/Requerimientos/Index.jpg" style="height: 50%; width:50%;"/>  |  <img src="https://i.imgur.com/lH1NBas.png" style="height: 50%; width:50%;"/>  |
+## JWCA°
 
