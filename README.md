@@ -24,16 +24,13 @@ La primera pantalla nos servirá de navegador hacia el login o el registro, lueg
 
 ## Pantalla de funcionamiento 
 
-Aquí podremos iniciar sesión. Además comprobará si la cuenta ha sido verificada para acceder al supuesto detalle (no pedido en la prueba) o a la pantalla de verificación.
+Aquí primero se muestra el inicio de sesión. Además se muestra en el segundo las rutas que debe seguir un estudiante, teniendo en cuenta dos, usando un transporte o caminata.
 
-El control de errores se ejecuta de dos formas distintas. En tiempo real, cada vez que uno de los campos pierde el foco o se actualiza. Y una gestión secundaria por si el login no hace *match* en la base de datos.
-
-Además la propia UI se actualiza reactivamente a través de su propio *StateFlow*.
 
 <p align="center">
 <img align="center" width="300" alt="portfolio_view" src="https://github.com/Jhonchuri11/GestorDocumental_Frontend_Busqueda/blob/master/Requerimientos/Tecsecurity-login.gif">
 <img align="center" width="300" alt="portfolio_view" src="https://github.com/Jhonchuri11/GestorDocumental_Frontend_Busqueda/blob/master/Requerimientos/Tecsecurity-routes.gif">
 </p>
 
-## JWCA°
+## 
 
