@@ -18,7 +18,7 @@ La primera pantalla nos servirá de navegador hacia el login o el registro, lueg
 
 <p align="center">
   <img align="center"  width="200" alt="portfolio_view" src="https://github.com/Jhonchuri11/GestorDocumental_Frontend_Busqueda/blob/master/Requerimientos/Index.jpg">
-  <img align="center"  width="200" alt="https://github.com/Jhonchuri11/GestorDocumental_Frontend_Busqueda/blob/master/Requerimientos/Form-login-user.jpg">
+  <img align="center"  width="200" alt="portfolo_view" src="https://github.com/Jhonchuri11/GestorDocumental_Frontend_Busqueda/blob/master/Requerimientos/Form-login-user.jpg">
   <img align="center"  width="200" alt="portfolio_view" src="https://github.com/Jhonchuri11/GestorDocumental_Frontend_Busqueda/blob/master/Requerimientos/Form-register-user.jpg">
 </p>
 
