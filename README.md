@@ -6,16 +6,11 @@
 
 ## Definición del proyecto:
 
-El reto consta de cuatro pantallas, en ellas podremos registrarnos, logearnos e incluso validar la cuenta.1
-Este proyecto ha sido creado en menos de una semana, siguiendo buenas prácticas y todas las recomendaciones de Google.
+El proyecto fue desarrollando para mostrar rutas en las calles, implementada con el framework Django, librería React y Kotlin.
 
 ## Características del proyecto:
 
-- Arquitectura MVVM.
-- Inyección de dependencias con *Dagger Hilt*
-- Firebase (Tanto para login como para persistir en base de datos *realTime*)
-- Splash optimizado
-- Vistas reutilizables y TODO creado con *Constraint Layout* para optimizar los recursos de la UI
+- Firebase (Tanto para login y register de usuaurios)
 - Diseños y estilos creados para la reutilización por todo el proyecto
 
 ## Pantalla de introducción
@@ -23,7 +18,7 @@ La primera pantalla nos servirá de navegador hacia el login o el registro. Como
 TODAS las navegaciones usar un *wrapper* event para optimizar más el livedata en eventos de una única acción.
 
 <p align="center">
-<img align="center" width="300" alt="portfolio_view" src="./docs/introductionview.png">
+<img align="center" width="300" alt="portfolio_view" src="https://github.com/Jhonchuri11/GestorDocumental_Frontend_Busqueda/blob/master/Requerimientos/Index.jpg">
 </p>
 
 ## Pantalla de login
