@@ -14,8 +14,7 @@ El proyecto fue desarrollando para mostrar rutas en las calles, implementada con
 - Diseños y estilos creados para la reutilización por todo el proyecto
 
 ## Pantalla de introducción
-La primera pantalla nos servirá de navegador hacia el login o el registro. Como curiosidad el *splash* está optimizado para evitar el típico *delay* inicial en blanco.
-TODAS las navegaciones usar un *wrapper* event para optimizar más el livedata en eventos de una única acción.
+La primera pantalla nos servirá de navegador hacia el login o el registro.
 
 <p align="center">
 <img align="center" width="300" alt="portfolio_view" src="https://github.com/Jhonchuri11/GestorDocumental_Frontend_Busqueda/blob/master/Requerimientos/Index.jpg">
@@ -43,3 +42,8 @@ También dispone de un *scroll* ya que al ser tan larga puede acortarse en dispo
 <p align="center">
 <img align="center" width="300" alt="portfolio_view" src="./docs/signin.png">
 </p>
+
+|                               Pantalla principal                               |                                   Resultado                                    |
+|:------------------------------------------------------------------------------:|:------------------------------------------------------------------------------:|
+|  <img src="https://github.com/Jhonchuri11/GestorDocumental_Frontend_Busqueda/blob/master/Requerimientos/Index.jpg" style="height: 50%; width:50%;"/>  |  <img src="https://i.imgur.com/lH1NBas.png" style="height: 50%; width:50%;"/>  |
+
