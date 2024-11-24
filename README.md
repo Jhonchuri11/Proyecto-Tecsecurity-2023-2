@@ -13,15 +13,16 @@ El proyecto fue desarrollando para mostrar rutas en las calles, implementada con
 - Firebase (Tanto para login y register de usuaurios)
 - Diseños y estilos creados para la reutilización por todo el proyecto
 
-## Pantalla de introducción
-La primera pantalla nos servirá de navegador hacia el login o el registro.
+## Pantalla de introducció, login y register
+La primera pantalla nos servirá de navegador hacia el login o el registro, luego iniciamos sesión o bien registrarse como usuario.
 
 <p align="center">
-<img align="center"  width="200" alt="portfolio_view" src="https://github.com/Jhonchuri11/GestorDocumental_Frontend_Busqueda/blob/master/Requerimientos/Index.jpg">
   <img align="center"  width="200" alt="portfolio_view" src="https://github.com/Jhonchuri11/GestorDocumental_Frontend_Busqueda/blob/master/Requerimientos/Index.jpg">
+  <img align="center"  width="200" alt="https://github.com/Jhonchuri11/GestorDocumental_Frontend_Busqueda/blob/master/Requerimientos/Form-login-user.jpg">
+  <img align="center"  width="200" alt="portfolio_view" src="https://github.com/Jhonchuri11/GestorDocumental_Frontend_Busqueda/blob/master/Requerimientos/Form-register-user.jpg">
 </p>
 
-## Pantalla de login
+## Pantalla de funcionamiento 
 
 Aquí podremos iniciar sesión. Además comprobará si la cuenta ha sido verificada para acceder al supuesto detalle (no pedido en la prueba) o a la pantalla de verificación.
 
