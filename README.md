@@ -1,7 +1,7 @@
 # Tecsecurity - [Proyecto 2023-II]
 
 <p align="center">
-<img align="center" width="300" alt="portfolio_view" src="./docs/logo.png">
+<img align="center" width="300" alt="portfolio_view" src="https://github.com/Jhonchuri11/GestorDocumental_Frontend_Busqueda/blob/master/Requerimientos/Logo.jpg">
 </p>
 
 ## Definición del proyecto:
